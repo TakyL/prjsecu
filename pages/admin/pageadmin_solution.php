@@ -86,10 +86,6 @@ h1, h2, h3, h4, h5, h6 {
 <div id="deux"></div>
 
 
-
-
-  
-<!-- End page content -->
 </div>
 
 </body>

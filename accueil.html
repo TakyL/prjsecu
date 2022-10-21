@@ -18,32 +18,30 @@ body {font-family: "Lato", sans-serif}
 <div class="w3-top">
   <div class="w3-bar w3-black w3-card">
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)"  title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-   
-    <!--<a href="#sqlinjection" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Sql injection</a>-->
+   <!-- <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>--->
     <div class="w3-dropdown-hover w3-hide-small">
         <button class="w3-padding-large w3-button" title="More">XSS <i class="fa fa-caret-down"></i></button>     
         <div class="w3-dropdown-content w3-bar-block w3-card-4">
           <a href="#" class="w3-bar-item w3-button" onclick=blip("xss")>Explication</a>
-          <a href="pages/pagexss.php" class="w3-bar-item w3-button">Demo</a> <!--FINI : DEux choix : <script>alert('ok')</script> ou bien le onerror-->
-          <a href="pages/pagexss_solution.html" class="w3-bar-item w3-button">Solution</a> <!--Le form est géré mais pas le onerror encore-->
+          <a href="pages/pagexss.php" class="w3-bar-item w3-button" target="_blank" >Demo</a> <!--FINI : DEux choix : <script>alert('ok')</script> ou bien le onerror-->
+          <a href="pages/pagexss_solution.php" class="w3-bar-item w3-button" target="_blank">Solution</a> <!--Le form est géré mais pas le onerror encore-->
         </div>
       </div>
     <div class="w3-dropdown-hover w3-hide-small">
-        <button class="w3-padding-large w3-button" title="More">SQL injection <i class="fa fa-caret-down"></i></button>     
+        <button class="w3-padding-large w3-button"  >SQL injection <i class="fa fa-caret-down"></i></button>     
         <div class="w3-dropdown-content w3-bar-block w3-card-4">
           <a href="#" class="w3-bar-item w3-button" onclick=blip("sql")>Explication</a>
-          <a href="pages/pagesql.php" class="w3-bar-item w3-button">Demo</a> <!--PB au niveau de la tentative de l'injection sql 0);DELETE from banque; -- )-->
-          <a href="pages/pagesqlsolution.php" class="w3-bar-item w3-button">Solution</a> <!--OK-->
+          <a href="pages/pagesql.php" class="w3-bar-item w3-button" target="_blank">Demo</a> <!--PB au niveau de la tentative de l'injection sql 0);DELETE from banque; -- )-->
+          <a href="pages/pagesqlsolution.php" class="w3-bar-item w3-button" target="_blank">Solution</a> <!--OK-->
         </div>
       </div>
 
     <div class="w3-dropdown-hover w3-hide-small">
-        <button class="w3-padding-large w3-button" title="More">Accès indirecte non autorisée <i class="fa fa-caret-down"></i></button>     
+        <button class="w3-padding-large w3-button" >Accès indirecte non autorisée <i class="fa fa-caret-down"></i></button>     
         <div class="w3-dropdown-content w3-bar-block w3-card-4">
           <a href="#" class="w3-bar-item w3-button" onclick=blip("acces")>Explication</a>
-          <a href="pages/pageacces.html" class="w3-bar-item w3-button">Demo</a> <!--FINI-->
-          <a href="pages/pageacces_solution.html" class="w3-bar-item w3-button">Solution</a> <!-- FINI -->
+          <a href="pages/pageacces.html" class="w3-bar-item w3-button" target="_blank">Demo</a> <!--FINI-->
+          <a href="pages/pageacces_solution.html" class="w3-bar-item w3-button" target="_blank">Solution</a> <!-- FINI -->
         </div>
       </div>
     
@@ -51,8 +49,8 @@ body {font-family: "Lato", sans-serif}
         <button class="w3-padding-large w3-button" title="More">CSRF<i class="fa fa-caret-down"></i></button>     
         <div class="w3-dropdown-content w3-bar-block w3-card-4">
           <a href="#" class="w3-bar-item w3-button" onclick=blip("csrf")>Explication</a>
-          <a href="pages/pagecsrf.html" target="_blank" class="w3-bar-item w3-button">Demo</a> <!--FINI-->
-          <a href="pages/pagecsrf_solution.html" target="_blank" class="w3-bar-item w3-button">Solution</a> <!--IDEM-->
+          <a href="pages/pagecsrf.html" target="_blank" class="w3-bar-item w3-button" target="_blank">Demo</a> <!--FINI-->
+          <a href="pages/pagecsrf_solution.html" target="_blank" class="w3-bar-item w3-button" target="_blank">Solution</a> <!--IDEM-->
         </div>
       </div>
     
@@ -60,11 +58,10 @@ body {font-family: "Lato", sans-serif}
       <button class="w3-padding-large w3-button" title="More">Fixation de session <i class="fa fa-caret-down"></i></button>     
       <div class="w3-dropdown-content w3-bar-block w3-card-4">
         <a href="#" class="w3-bar-item w3-button" onclick=blip("fix")>Explication</a>
-        <a href="#" class="w3-bar-item w3-button">Demo</a> <!--A faire-->
-        <a href="#" class="w3-bar-item w3-button">Solution</a><!--A faire-->
+        <a href="pages/pagefixation.php" class="w3-bar-item w3-button" target="_blank">Demo</a> <!--A faire-->
+        <a href="pages/pagefixation_solution.php" class="w3-bar-item w3-button" target="_blank">Solution</a><!--A faire-->
       </div>
     </div>
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
   </div>
 </div>
 
@@ -90,6 +87,6 @@ window.onclick = function(event) {
   }
 }
 </script>
-<script src="chargement.js"></script>
+<script src="js/chargement.js"></script>
 </body>
 </html>
