@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="Fr">
 <head>
 <title>Accueil</title>
 <meta charset="UTF-8">
@@ -9,7 +9,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
 </style>
 </head>
 <body>
@@ -18,20 +17,19 @@ body {font-family: "Lato", sans-serif}
 <div class="w3-top">
   <div class="w3-bar w3-black w3-card">
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)"  title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-   <!-- <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>--->
     <div class="w3-dropdown-hover w3-hide-small">
         <button class="w3-padding-large w3-button" title="More">XSS <i class="fa fa-caret-down"></i></button>     
         <div class="w3-dropdown-content w3-bar-block w3-card-4">
           <a href="#" class="w3-bar-item w3-button" onclick=blip("xss")>Explication</a>
-          <a href="pages/pagexss.php" class="w3-bar-item w3-button" target="_blank" >Demo</a> <!--FINI : DEux choix : <script>alert('ok')</script> ou bien le onerror-->
-          <a href="pages/pagexss_solution.php" class="w3-bar-item w3-button" target="_blank">Solution</a> <!--Le form est géré mais pas le onerror encore-->
+          <a href="pages/pagexss.php" class="w3-bar-item w3-button" target="_blank" >Demo</a> <!--FINI -->
+          <a href="pages/pagexss_solution.php" class="w3-bar-item w3-button" target="_blank">Solution</a> <!-- FINI -->
         </div>
       </div>
     <div class="w3-dropdown-hover w3-hide-small">
         <button class="w3-padding-large w3-button"  >SQL injection <i class="fa fa-caret-down"></i></button>     
         <div class="w3-dropdown-content w3-bar-block w3-card-4">
           <a href="#" class="w3-bar-item w3-button" onclick=blip("sql")>Explication</a>
-          <a href="pages/pagesql.php" class="w3-bar-item w3-button" target="_blank">Demo</a> <!--PB au niveau de la tentative de l'injection sql 0);DELETE from banque; -- )-->
+          <a href="pages/pagesql.php" class="w3-bar-item w3-button" target="_blank">Demo</a> <!-- -->
           <a href="pages/pagesqlsolution.php" class="w3-bar-item w3-button" target="_blank">Solution</a> <!--OK-->
         </div>
       </div>
@@ -58,17 +56,17 @@ body {font-family: "Lato", sans-serif}
       <button class="w3-padding-large w3-button" title="More">Fixation de session <i class="fa fa-caret-down"></i></button>     
       <div class="w3-dropdown-content w3-bar-block w3-card-4">
         <a href="#" class="w3-bar-item w3-button" onclick=blip("fix")>Explication</a>
-        <a href="pages/pagefixation.php" class="w3-bar-item w3-button" target="_blank">Demo</a> <!--A faire-->
-        <a href="pages/pagefixation_solution.php" class="w3-bar-item w3-button" target="_blank">Solution</a><!--A faire-->
+        <a href="pages/pagefixation.php" class="w3-bar-item w3-button" target="_blank">Demo</a> <!-- FINI-->
+        <a href="pages/pagefixation_solution.php" class="w3-bar-item w3-button" target="_blank">Solution</a><!-- FINI -->
       </div>
     </div>
   </div>
 </div>
 
-<!-- Page content -->
+
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
-  <!-- The Band Section -->
+  <!-- Contenu-->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="contenu">
     <h2 class="w3-wide" id="titre">Explication de differentes failles connues et importantes en informatique</h2>
     <p class="w3-opacity" id="soustitre"><i>Vulgariser, c'est bien </i></p>
